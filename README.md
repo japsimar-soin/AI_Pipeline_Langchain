@@ -1,0 +1,44 @@
+# Weather + PDF AI Agent
+
+## Setup instructions:
+1. Set `OPENWEATHER_API_KEY` environment variable from [openweathermap.org](https://openweathermap.org/api)
+2. Place any pdf with title `pdf_doc.pdf` in root directory of project
+3. Set up `LangSmith API key` for tracing
+4. Activate virtual environment in your directory
+5. Run the command: `streamlit run app.py`
+
+---
+PDF Link in my project: [LangChain](https://www.researchgate.net/publication/385681151_LangChain)
+
+## How to use?
+
+**Try asking:**
+- "What's the weather in Mumbai?"
+- "Tell me about Langchain" (from PDF)
+- "What is performance testing?" (from PDF)
+
+## IMPORTANT LINKS:
+- [Github repo](https://github.com/japsimar-soin/AI_Pipeline_Langchain)
+- [Deployed Link]()
+- [Loom Video]()
+- [PDF used in project]()
+
+
+## LangSmith logs/screenshots
+Streamlit app demo:
+![Streamlit app](./Streamlit%20app.png)
+---
+This shows Langsmith logs:
+
+![Langsmith logs](./Langsmith_logs.png)
+---
+For the following chat with LLM:
+
+![Chat with Agent](./AI_Agent_Chat.png)
+---
+LangSmith Trace for pdf query:
+
+![Langsmith Trace](./Langsmith_trace.png)
+---
+Test Results form unit tests:
+![Test Results](./Test_results.png)
