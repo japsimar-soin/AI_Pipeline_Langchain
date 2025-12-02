@@ -26,19 +26,19 @@ PDF Link in my project: [LangChain](https://www.researchgate.net/publication/385
 
 ## LangSmith logs/screenshots
 Streamlit app demo:
-![Streamlit app](./Streamlit%20app.png)
+![Streamlit app](./images/Streamlit%20app.png)
 ---
 This shows Langsmith logs:
 
-![Langsmith logs](./Langsmith_logs.png)
+![Langsmith logs](./images/Langsmith_logs.png)
 ---
 For the following chat with LLM:
 
-![Chat with Agent](./AI_Agent_Chat.png)
+![Chat with Agent](./images/AI_Agent_Chat.png)
 ---
 LangSmith Trace for pdf query:
 
-![Langsmith Trace](./Langsmith_trace.png)
+![Langsmith Trace](./images/Langsmith_trace.png)
 ---
 Test Results form unit tests:
-![Test Results](./Test_results.png)
+![Test Results](./images/Test_results.png)
