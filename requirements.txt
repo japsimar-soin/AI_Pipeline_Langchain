@@ -1,0 +1,15 @@
+langchain>=0.1.0
+langchain-text-splitters
+langchain-huggingface
+langchain-qdrant
+langgraph>=0.0.20
+langsmith
+qdrant-client
+streamlit
+PyPDF2
+requests
+sentence-transformers
+torch
+transformers
+python-dotenv
+pytest
