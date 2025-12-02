@@ -6,8 +6,14 @@ from PyPDF2 import PdfReader
 from langsmith import traceable
 from qdrant_client import QdrantClient
 from qdrant_client.http import models
+from dotenv import load_dotenv
 
-qdrant_client = QdrantClient(":memory:", prefer_grpc=False)
+load_dotenv()
+
+# qdrant_client = QdrantClient(":memory:", prefer_grpc=False)
+QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
+qdrant_client = QdrantClient(url=QDRANT_URL)
+
 embeddings_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
