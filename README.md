@@ -7,6 +7,8 @@
 4. Activate virtual environment in your directory
 5. Run the command: `streamlit run app.py`
 
+Note: I have set it up in a docker container, so also need to run: `docker-compose up -d qdrant` (qdrant and streamlit apps are running in separate docker containers)
+
 ---
 PDF Link in my project: [LangChain](https://www.researchgate.net/publication/385681151_LangChain)
 
@@ -19,9 +21,8 @@ PDF Link in my project: [LangChain](https://www.researchgate.net/publication/385
 
 ## IMPORTANT LINKS:
 - [Github repo](https://github.com/japsimar-soin/AI_Pipeline_Langchain)
-- [Deployed Link]()
-- [Loom Video]()
-- [PDF used in project]()
+- [Loom Video](https://www.loom.com/share/1a28bd516cff411b8ffaeb615c533311)
+- [PDF used in project](https://www.researchgate.net/publication/385681151_LangChain)
 
 
 ## LangSmith logs/screenshots

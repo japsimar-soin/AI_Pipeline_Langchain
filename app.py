@@ -17,14 +17,14 @@ if "vectorstore_initialized" not in st.session_state:
             st.session_state.vectorstore_initialized = True
             st.success("PDF loaded successfully!")
         except FileNotFoundError:
-            st.warning("⚠️ PDF file (pdf_doc.pdf) not found. Ask weather queries instead.")
+            st.warning("PDF file (pdf_doc.pdf) not found. Ask weather queries instead.")
             st.session_state.vectorstore_initialized = False
         except Exception as e:
             st.error(f"Error loading PDF: {str(e)}")
             st.session_state.vectorstore_initialized = False
 
 if not os.getenv("OPENWEATHER_API_KEY"):
-    st.warning("⚠️ OpenWeatherMap API key not set. Add the API Key.")
+    st.warning("OpenWeatherMap API key not set. Add the API Key.")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []

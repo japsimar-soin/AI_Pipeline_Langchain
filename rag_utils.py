@@ -10,9 +10,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# qdrant_client = QdrantClient(":memory:", prefer_grpc=False)
-QDRANT_URL = os.getenv("QDRANT_URL", "http://localhost:6333")
-qdrant_client = QdrantClient(url=QDRANT_URL)
+# Use in-memory Qdrant for local development, or remote Qdrant if QDRANT_URL is set
+QDRANT_URL = os.getenv("QDRANT_URL")
+if QDRANT_URL:
+    qdrant_client = QdrantClient(url=QDRANT_URL)
+else:
+    # In-memory mode for local development (no Docker needed)
+    qdrant_client = QdrantClient(":memory:", prefer_grpc=False)
 
 embeddings_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
